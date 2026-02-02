@@ -3,73 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ポートフォリオ | にはち</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>わたしのポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <h1><a href="#">swuhirakata</a></h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#works">Works</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <button id="themeToggle" aria-pressed="false">Theme</button>
+    <div class="brand">
+      <h1>にはち</h1>
+      <p class="tagline">学びながら“作れる人”になる。</p>
+    </div>
+
+    <nav class="nav">
+      <a href="#about">自己紹介</a>
+      <a href="#works">制作物</a>
+      <a href="#skills">スキル</a>
+      <a href="#contact">連絡先</a>
     </nav>
   </header>
 
   <main>
+    <section class="hero">
+      <h2>こんにちは！</h2>
+      <p>
+        このサイトは、HTML/CSSとPythonを学びながら作るポートフォリオです。
+        これから作品を増やして更新していきます。
+      </p>
+      <a class="btn" href="#works">制作物を見る</a>
+    </section>
+
     <section id="about" class="section">
-      <h2>About</h2>
-      <p>自己紹介を1〜2段落で。学びたい領域・強み・興味関心。</p>
-      <ul class="facts">
-        <li>拠点：東京</li>
-        <li>専攻：韓国語</li>
-        <li>関心：日本語教育</li>
-      </ul>
+      <h2>自己紹介</h2>
+      <div class="two-col">
+        <div>
+          <p class="lead">
+            ○○大学1年。興味は言語勉強、お菓子やパン作り、編み物です。
+          </p>
+          <ul>
+            <li>好き：音楽、貯金、散歩</li>
+            <li>学び：韓国語</li>
+            <li>目標：優秀な秘書になる</li>
+          </ul>
+        </div>
+        <div class="profile-box">
+          <img class="profile" src="ちぇごしむ.jpg" alt="プロフィール写真">
+          <p class="small muted"></p>
+        </div>
+      </div>
     </section>
 
     <section id="works" class="section">
-      <h2>Works</h2>
+      <h2>制作物</h2>
       <div class="grid">
-        <article class="card work">
-          <img src="assets/work1.jpg" alt="作品1">
-          <h3>作品タイトル1</h3>
-          <p>概要。役割・使った技術・成果。</p>
-          <a class="btn" href="#" target="_blank" rel="noopener">見る</a>
+        <article class="card">
+          <h3>作品1：自己紹介ページ</h3>
+          <p>HTMLとCSSで基本のレイアウトを作りました。</p>
+          <a class="link" href="#">詳細（あとでリンク）</a>
         </article>
-        <article class="card work">
-          <img src="assets/work2.jpg" alt="作品2">
-          <h3>作品タイトル2</h3>
-          <p>概要。役割・使った技術・成果。</p>
-          <a class="btn" href="#" target="_blank" rel="noopener">見る</a>
+
+        <article class="card">
+          <h3>作品2：Pythonミニアプリ</h3>
+          <p>じゃんけんプログラムを作成しました。</p>
+          <a class="link" href="#">詳細（あとでリンク）</a>
+        </article>
+
+        <article class="card">
+          <h3>作品3：観光地紹介スライド</h3>
+          <p>Webから情報を集めて要約し、スライドにまとめました。</p>
+          <a class="link" href="#">詳細（あとでリンク）</a>
         </article>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul class="tags">
-        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Figma</li>
+      <h2>スキル</h2>
+      <ul class="chips">
+        <li>HTML</li><li>CSS</li><li>Python</li><li>PowerPoint</li><li>調査・要約</li>
       </ul>
     </section>
 
     <section id="contact" class="section">
-      <h2>Contact</h2>
-      <form id="contactForm">
-        <label>お名前<input name="name" required></label>
-        <label>メール<input name="email" type="email" required></label>
-        <label>メッセージ<textarea name="message" rows="5" required></textarea></label>
-        <button type="submit">送信</button>
-        <p id="result" role="status" aria-live="polite"></p>
-      </form>
+      <h2>連絡先</h2>
+      <p>連絡はSNSまたはメールでお願いします。</p>
+      <ul>
+        <li>Gmail：○○○○○/gmail.com</li>
+        <li>instagram：＠○○○○○</li>
+      </ul>
+      <p class="small muted">
+        ※住所・電話番号など個人情報は載せないこと
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <small>&copy; <span id="year"></span> Your Name</small>
+    <p class="small muted">© 2025 △△</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
