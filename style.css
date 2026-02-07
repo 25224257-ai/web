@@ -144,4 +144,19 @@ a:hover { text-decoration: underline; }
   .site-header { flex-direction: column; align-items: flex-start; }
   .two-col { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
+
+}
+
+/* 自己紹介：興味の写真 */
+.photo-row {
+  display: flex;
+  gap: 16px;
+  margin: 12px 0;
+}
+
+.intro-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
 }
